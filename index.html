@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Weather Forecast</title>
+  <style>
+  </style>
+</head>
+<body>
+    <div id="videoback">
+        <video src="video.mp4" autoplay loop muted>
+        </video>
+    </div>
+    <div id="overlay"></div>
+  <div id="popup">
+    <h2>Welcome to my webpage!</h2>
+    <h3>*Note: When you use speaker, in that time some space will created after text (in the text box)...Please you remove this extra space than press "Get Weather" button<h3>
+    <h4>Thank you for visiting.</h4>
+    <button onclick="closePopup()" id="closebt">Close</button>
+  </div>
+
+  <div id="main">
+    <video src="video.mp4" autoplay loop muted>
+       
+    </video>
+    <div id="heading">Weather Forecast</div>
+    <input type="text" placeholder="Enter or Speak city name" id="city">
+    <button onclick="getWeather()" id="weatherbt">Get Weather</button>
+    <div id="buttonsp" onclick="speaker()">
+        <img src="speaker.png" id="speaker">
+    </div>
+    <div id="error"></div>
+    <div id="weather"></div>
+  </div>
+</body>
+</html>

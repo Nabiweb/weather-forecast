@@ -1,0 +1,114 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#popup {
+    width:18rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:15px;
+    background-color: rgb(91, 230, 169);
+    border: 1px solid black;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+    z-index: 1000;
+}
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+h3{
+    color:red;
+}
+#closebt{
+    background-color:rgb(72, 9, 131);
+    color:white;
+    height: 3rem;
+    border: 1px solid rgb(72, 9, 131);
+    border-radius: 2rem;
+
+}
+#main{
+    width:20rem;
+    height:25rem;
+    background-color:transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#weather{
+    color:whitesmoke;
+    position: absolute;
+    top:45%;
+    left:25%;
+}
+#error{
+    color: white;
+    position: absolute;
+    top:45%;
+    left:25%;
+}
+#heading{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top:8%;
+    left:20%;
+}
+#speaker{
+    height: 2rem;
+    background-color:transparent;
+}
+#buttonsp{
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top:20.5%;
+    left:75%;
+}
+#city{
+    color:rgb(225, 237, 201);
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    height: 2rem;
+    border: 1px solid whitesmoke;
+    border-radius: 3rem;
+    background-color:transparent;
+}
+#city::placeholder{
+    text-align: center;
+    color:aliceblue;
+}
+#weatherbt{
+    color:white;
+    height: 2rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 1rem;
+    position: absolute;
+    top:35%;
+    left:35%;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+#videoback{
+    filter: blur(4px);
+}
